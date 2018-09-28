@@ -1,4 +1,4 @@
-package testone.ds;
+package testone.collections;
 
 public class SinglyLinkedList<T> {
 	

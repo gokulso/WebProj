@@ -7,15 +7,17 @@ public class IteratorPattern {
 		ChannelCollection channels = populateChannels();
 		
 		ChannelIterator baseIterator = channels.iterator(ChannelTypeEnum.ALL);
+		//channels.removeChannel(new Channel(99.5, ChannelTypeEnum.HINDI));
 		
 		while(baseIterator.hasNext()){
 			Channel c = baseIterator.next();
+			
 			System.out.println(c.toString());
 		}
 		
 		System.out.println("******");
 		
-		ChannelIterator enlishIterator = channels.iterator(ChannelTypeEnum.ENGLISH);
+		ChannelIterator enlishIterator = channels.iterator(ChannelTypeEnum.HINDI);
 		while(enlishIterator.hasNext()){
 			Channel c = enlishIterator.next();
 			System.out.println(c.toString());
