@@ -1,4 +1,4 @@
-package testone.algoes;
+package com.algoes.sorting;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class BubbleSort {
 	
 
 	public static void main(String[] args) {
-		int[] input = { 4, 2, 9, 6, 5};
+		int[] input = {100,20,15,30,5,75,40};
 		
 		sortAarrays(input);
 	}
@@ -24,11 +24,11 @@ public class BubbleSort {
 	private static void sortAarrays(int[] input) {
 		int n = input.length;
 		int k;
-		for (int m = n; m > 0; m--) {
-			for (int i = 0; i < n - 1; i++) {
-				k = i + 1;
-				if (input[i] > input[k]) {
-					swapNumbers(i, k, input);
+		for (int i = n; i > 0; i--) {
+			for (int j = 0; j < n - 1; j++) {
+				k = j + 1;
+				if (input[j] > input[k]) {
+					swapNumbers(j, k, input);
 				}
 
 			}
@@ -41,7 +41,7 @@ public class BubbleSort {
 		
 		int temp;
 		temp = input[i];
-		input[i] = input[k];
+ 		input[i] = input[k];
 		input[k] = temp;
 	}
 	

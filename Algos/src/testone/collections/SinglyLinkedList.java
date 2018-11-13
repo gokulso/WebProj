@@ -154,7 +154,7 @@ public class SinglyLinkedList<T> {
 
 	public static void main(String[] args) {
 		
-		  SinglyLinkedList<Integer> sl = new SinglyLinkedList<Integer>();
+		  SinglyLinkedList<Integer> sl = new SinglyLinkedList<>();
 	        sl.isEmpty();
 		    sl.add(3);
 	        sl.add(32);
