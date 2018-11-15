@@ -1,4 +1,4 @@
-package designePattern;
+package designePattern.singleton;
 public class Singleton {
 	
 	private static  Singleton single;
