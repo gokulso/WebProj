@@ -1,4 +1,4 @@
-package testone.algoes;
+package com.algoes.searching;
 
 public class BinarySearch {
 
