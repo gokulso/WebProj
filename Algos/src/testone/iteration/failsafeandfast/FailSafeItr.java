@@ -14,12 +14,6 @@ public class FailSafeItr {
 		map.put("A", "Raju");
 		map.put("H", "Ramu");
 		
-		
-/*		for(Entry<String, String> entry : map.entrySet()){
-			System.out.println(entry.getValue());
-			map.put("P", "John");
-		}*/
-
 		Iterator<String> it = map.keySet().iterator();
 
 
@@ -28,5 +22,13 @@ public class FailSafeItr {
 			map.put("O", "John");
 
 		}
+		
+		/*Iterator<String> it2 = map.keySet().iterator();
+		System.out.println("After.................");
+		
+		while (it2.hasNext()) {
+			System.out.println(map.get(it2.next()));
+
+		}*/
 	}
 }
