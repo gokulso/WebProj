@@ -2,6 +2,7 @@
 package test.generics;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class TestWildCards {
@@ -25,6 +26,5 @@ public class TestWildCards {
 
 	}
 	
-
 
 }

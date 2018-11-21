@@ -14,7 +14,7 @@ public class GenericMethodTest {
 	
 	}
 	
-	public static <T> void genericVersion(T element){
+	public static <T extends Object> void genericVersion(T element){
 		System.out.println(element.getClass().getName() + element);
 	}
 

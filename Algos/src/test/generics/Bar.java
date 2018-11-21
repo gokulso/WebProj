@@ -5,6 +5,8 @@ import java.util.List;
 public class Bar {
 	
 	/*
+	 *  [PECS] Producer-Extends Consumer-Super
+	 * 
 	 *  Suppose you have a method that takes as its parameter a collection of things, 
 	 *  but you want it to be more flexible than just accepting a Collection<Thing>.
 	 *  
@@ -31,6 +33,7 @@ public class Bar {
 		synchronized (this) {
 			list.add(new Dog());
 			list.add(new Cat());
+			list.add(new Animal());
 		}
 
 	}
