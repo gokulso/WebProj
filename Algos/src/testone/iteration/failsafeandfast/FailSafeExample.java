@@ -15,18 +15,25 @@ public class FailSafeExample {
 		Iterator<String> iterator = premiumPhone.keySet().iterator();
 
 		while (iterator.hasNext()) {
-			System.out.println(premiumPhone.get(iterator.next()));
-			premiumPhone.put("Sony", "Xperia Z");
+			String s = iterator.next();
+			
+			/*if("Apple".equals(s))
+				iterator.remove();*/
+			
+	      System.out.println(s);
 		}
-		System.out.println("After ");
 		
-		Iterator<String> iterator1 = premiumPhone.keySet().iterator();
+      System.out.println(premiumPhone);
+		//System.out.println("After ");
+		
+	/*	Iterator<String> iterator1 = premiumPhone.keySet().iterator();
 		
 		while (iterator1.hasNext()) {
 			System.out.println(premiumPhone.get(iterator1.next()));
-			//premiumPhone.put("Sony", "Xperia Z");
+			premiumPhone.put("Sony", "Xperia Z");
+		  
 		}
-
+*/
 
 	}
 

@@ -3,19 +3,18 @@ package inhertancetest;
 public class ClassB extends ClassA {
 	
 	
-	private int a=20;
+	//public int a=20;
 	
-     public void someMethod(){
-		System.out.println(" In Class B someMethod");
-	}
+	
 
-	public int getAA() {
+	public int getA() {
+		System.out.println(" In Class B getA");
 		return a;
 	}
 
-	public void setA(int a) {
+/*	public void setA(int a) {
 		this.a = a;
 	}
-
-
+	
+*/
 }

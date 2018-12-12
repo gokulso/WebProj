@@ -29,10 +29,11 @@ public class Test implements InterfaceOne {
 		
 		
 		ClassA obj = new ClassB();
-		
+		System.out.println(obj.a);
+			
 		System.out.println(obj.getA());
 		
-		obj.someMethod();
+	
 		
 
 	}
