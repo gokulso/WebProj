@@ -10,6 +10,7 @@ public class FailSafeExample {
 		Map<String, String> premiumPhone = new ConcurrentHashMap<>();
 		premiumPhone.put("Apple", "iPhone");
 		premiumPhone.put("HTC", "HTC one");
+		//premiumPhone.put(null, "null");
 
 
 		Iterator<String> iterator = premiumPhone.keySet().iterator();

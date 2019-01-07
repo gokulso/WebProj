@@ -9,7 +9,7 @@ public class CopyOnWrite {
 
 	public static void main(String[] args) {
 		// creating a thread-safe Arraylist.
-		List<String> threadSafeList = new CopyOnWriteArrayList<String>();
+		List<String> threadSafeList = new CopyOnWriteArrayList<>();
 		
 		//List<String> threadSafeList = new ArrayList<>();
 		
@@ -29,11 +29,12 @@ public class CopyOnWrite {
 
 		while (it.hasNext()) {
 			String str = it.next();
-			if ("Two".equals(str))
-			it.remove();
+			//if ("Two".equals(str))
+			//it.remove();
 			
-		/*	if("six".equals(str))
-			threadSafeList.add("seven");*/
+			if("six".equals(str))
+			threadSafeList.remove("six");
+			
 			
 		}
 		

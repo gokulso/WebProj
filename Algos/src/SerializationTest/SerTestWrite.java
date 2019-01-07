@@ -7,6 +7,7 @@ import java.io.ObjectOutputStream;
 public class SerTestWrite {
 
 	public static void main(String[] args) {
+		//Address a = new Address("Baner",411045);
 		Person object = new Person(10, "John", "Texas");
 
 		// Serialization
@@ -29,6 +30,8 @@ public class SerTestWrite {
 			// object.b = 2000;
 		} catch (IOException ex) {
 			System.out.println("IOException is caught");
+			ex.printStackTrace();
+			
 		}
 
 		// object = null;

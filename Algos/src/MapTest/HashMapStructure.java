@@ -19,8 +19,13 @@ public class HashMapStructure {
 		countryCapitalMap.put(india, "Delhi");
 		countryCapitalMap.put(japan, "Tokyo");
 		countryCapitalMap.put(france, "Paris");
-		countryCapitalMap.put(russia, "Moscow");
-
+		String s = countryCapitalMap.put(russia, "Moscow");
+		
+		System.out.println("size :- " + countryCapitalMap.size());
+		
+		System.out.println(" return key :- " + s);
+		
+		
 		Iterator<Country> countryCapitalIter = countryCapitalMap.keySet().iterator();// put debug here
 																	
 		while (countryCapitalIter.hasNext()) {
@@ -28,6 +33,8 @@ public class HashMapStructure {
 			String capital = countryCapitalMap.get(countryObj);
 			System.out.println(countryObj.getName() + "----" + capital);
 		}
+		
+		countryCapitalMap.forEach((k,v)-> System.out.println("Key " + k.getName()+ "  Val " + v));
 	}
 
 }

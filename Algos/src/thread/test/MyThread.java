@@ -2,11 +2,18 @@ package thread.test;
 
 class MyThread extends Thread {
 	public static void main(String[] args) {
-		MyThread t = new MyThread();
+		/*MyThread t = new MyThread();
+		MyRunnable t = new MyRunnable();
 		Thread x = new Thread(t);
 		x.start();
+		*/
 		
+		new Thread(()->System.out.println("In lamda :- " + Thread.currentThread().getName())).start();
+	
 		System.out.println("In Main :- " + Thread.currentThread().getName());
+		
+		
+		
 	}
 
 	public void run() {

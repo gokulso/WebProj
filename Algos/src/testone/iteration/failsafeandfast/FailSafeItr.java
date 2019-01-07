@@ -12,7 +12,9 @@ public class FailSafeItr {
 		Map<String, String> map = new ConcurrentHashMap<>();
 
 		map.put("A", "Raju");
+		map.put("s", "Dinu");
 		map.put("H", "Ramu");
+		map.remove("H");
 		
 		Iterator<String> it = map.keySet().iterator();
 
