@@ -3,8 +3,14 @@ package com.algoes.searching;
 import java.util.Arrays;
 
 public class BinarySearch {
+	
+	
+
 
 	public static void main(String[] args) {
+		
+		Object o = new Object();
+		
 	 
 		BinarySearch bs = new BinarySearch();
 		int[] arr  = {1, 3, 4, 10,90,80,110,120,130,2,140,150,40,50,60,70,100,};
