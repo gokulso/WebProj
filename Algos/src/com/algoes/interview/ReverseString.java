@@ -24,10 +24,8 @@ public class ReverseString {
 			return str;
 		}
 		
-		//return reverseString(str.substring(1)) + str.charAt(0);
-		return reverseString(str.substring(1));
-		
-		
+		return reverseString(str.substring(1)) + str.charAt(0);
+			
 	}
 
 }
