@@ -7,7 +7,7 @@
         <!-- <property name="hibernate.bytecode.use_reflection_optimizer">false</property> -->
         <property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
         <property name="hibernate.connection.username">sa</property>
-        <property name="hibernate.connection.password">test_1234</property>
+        <property name="hibernate.connection.password">Test_1234</property>
         <property name="hibernate.connection.url">jdbc:jtds:sqlserver://localhost:1433/TestDB</property>
         <property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
         <property name="hibernate.connection.pool_size">1</property>
@@ -15,7 +15,9 @@
         <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
         <property name="show_sql">true</property>
-        <mapping class="com.test.Vehicle"></mapping>
+        <mapping class="com.mappings.UserDetails"></mapping>
+        <!-- <mapping class="com.mappings.Address"></mapping> -->
+        <mapping class="com.mappings.Vehicle"></mapping>
         
         
     </session-factory>

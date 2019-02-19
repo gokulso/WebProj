@@ -1,7 +1,11 @@
 package com.algoes.interview;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Test { 
-    public static void main(String[] args) 
-    { 
+    public static void main(String[] args) { 
         int a = 10; 
         //int b = ++a; 
         int b = a++; 
@@ -16,4 +20,12 @@ public class Test {
         System.out.println("x = " + x + " y = " + y);
         }
     } 
+    
+   void  test(){
+    	   Map<String, String> map = new HashMap<>();
+    	    
+    	    Collections.synchronizedMap(map);
+    }
+    
+ 
 }

@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Bar {
 	
-	/*
+	/**
 	 *  [PECS] Producer-Extends Consumer-Super
 	 * 
 	 *  Suppose you have a method that takes as its parameter a collection of things, 
@@ -28,12 +28,14 @@ public class Bar {
 	 * @param list
 	 **/
 	
+	//public void doInsert(List<? extends Animal> list) {
 	public void doInsert(List<? super Animal> list) {
 
 		synchronized (this) {
 			list.add(new Dog());
 			list.add(new Cat());
 			list.add(new Animal());
+			//list.add(new Object());
 		}
 
 	}

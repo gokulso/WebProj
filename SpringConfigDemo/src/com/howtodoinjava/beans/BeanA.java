@@ -1,12 +1,15 @@
 package com.howtodoinjava.beans;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @SuppressWarnings("unused")
 @Component
 public class BeanA {
 	
+	
+	private TestInterface testInterface;
 	private BeanB beanB;
 	private BeanC beanC;
 	
@@ -25,4 +28,25 @@ public class BeanA {
 		System.out.println("Setting bean reference for BeanC");
 		this.beanC = beanC;
 	}
+
+	public BeanB getBeanB() {
+		return beanB;
+	}
+
+	public BeanC getBeanC() {
+		return beanC;
+	}
+
+	public TestInterface getTestInterface() {
+		return testInterface;
+	}
+    
+	@Autowired
+	@Qualifier("testClassOne")
+	public void setTestInterface(TestInterface testInterface) {
+		this.testInterface = testInterface;
+	}
+	
+	
+	
 }

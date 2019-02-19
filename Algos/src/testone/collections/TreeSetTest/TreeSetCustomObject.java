@@ -8,9 +8,9 @@ public class TreeSetCustomObject {
 
 	public static void main(String[] args) {
 		
-		SortedSet<Person> ts = new TreeSet<>();
-		//NewComparator compa = new NewComparator();
-		//SortedSet<Person> ts = new TreeSet<>(compa);
+		//SortedSet<Person> ts = new TreeSet<>();
+		NewComparator compa = new NewComparator();
+		SortedSet<Person> ts = new TreeSet<>(compa);
 		
 		ts.add(new Person(18,"Mary"));
 		ts.add(new Person(22,"john"));
@@ -23,6 +23,10 @@ public class TreeSetCustomObject {
 			System.out.println(itr.next() + " ");
 		
 		System.out.println("TreeSet Size :" + ts.size());
+		
+		
+		
+		
 		
 		
 
