@@ -4,7 +4,7 @@ public class MyRunnableTask implements Runnable {
 
 	@Override
 	public void run() {
-		System.out.println("From My Runnable  " + Thread.currentThread().getName());
+		System.out.println("From My Runnable  :-" + Thread.currentThread().getName());
 
 	}
 
