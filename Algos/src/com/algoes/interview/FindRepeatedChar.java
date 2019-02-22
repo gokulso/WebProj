@@ -37,6 +37,8 @@ public class FindRepeatedChar {
             }
             
             
+            //  using Collections.frequency(list, chr))
+            
             
             List<String> list = Arrays.asList(str.split(""));
             
