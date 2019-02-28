@@ -27,18 +27,19 @@ public class Country {
 		this.population = population;
 	}
 
-/*	@Override
+	@Override
 	public int hashCode() {
-		final int prime = 31;
 		int result = 1;
+		
+/*		final int prime = 31;
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + (int) (population ^ (population >>> 32));
+		result = prime * result + (int) (population ^ (population >>> 32));*/
 		return result;
-	}*/
+	}
 
-/*	@Override
+	@Override
 	public boolean equals(Object obj) {
-		if (this == obj)
+		/*if (this == obj)
 			return true;
 		if (obj == null)
 			return false;
@@ -51,21 +52,14 @@ public class Country {
 		} else if (!name.equals(other.name))
 			return false;
 		if (population != other.population)
-			return false;
-		return true;
-	}*/
+			return false;*/
+		return false;
+	}
 
 	// If length of name in country object is even then return 31(any random
 	// number) and if odd then return 95(any random number).
 	// This is not a good practice to generate hashcode as below method but I am
 	// doing so to give better and easy understanding of hashmap.
-	@Override
-	public int hashCode() {
-	/*	if (this.name.length() % 2 == 0)
-			return 31;
-		else*/
-			return 1;
-	}
 
 	
 	

@@ -8,6 +8,8 @@ public class HashMapStructure {
 	 * @author Gokul Sonawane
 	 */
 	public static void main(String[] args) {
+		
+		Object o = new Object();
 
 		Country india = new Country("India", 1000);
 		Country japan = new Country("Japan", 10000);
