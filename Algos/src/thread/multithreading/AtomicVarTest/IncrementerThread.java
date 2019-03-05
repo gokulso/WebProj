@@ -1,4 +1,4 @@
-package test.multithreading.AtomicVarTest;
+package thread.multithreading.AtomicVarTest;
 
 public class IncrementerThread extends Thread {
 

@@ -1,4 +1,4 @@
-package test.multithread.datashare;
+package thread.multithread.datashare;
 
 public class DataInfo {
 	

@@ -1,4 +1,4 @@
-package test.multithread.datashare;
+package thread.multithread.datashare;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;

@@ -1,4 +1,4 @@
-package test.multithreading;
+package thread.multithreading;
 
 public class PrintEvenOddTest {
 

@@ -1,4 +1,4 @@
-package test.multithreading;
+package thread.multithreading;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;

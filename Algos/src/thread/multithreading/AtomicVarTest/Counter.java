@@ -1,4 +1,4 @@
-package test.multithreading.AtomicVarTest;
+package thread.multithreading.AtomicVarTest;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
