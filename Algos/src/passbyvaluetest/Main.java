@@ -23,5 +23,7 @@ public class Main {
 		c.setAttribute(25);
 	}
 	
+	Integer test = new Integer(10);
+	
 	
 }

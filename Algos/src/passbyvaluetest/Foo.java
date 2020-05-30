@@ -1,6 +1,6 @@
 package passbyvaluetest;
 
-public class Foo {
+public  class Foo {
 	private int attribute;
 
 	public Foo(int a) {

@@ -13,19 +13,19 @@ public class SortTest  {
 		strList.add(new Person(4,"Merry"));
 		strList.add(new Person(3,"Mike"));
 		strList.add(new Person(118,"Devid"));
-		
+
 		
 		
 		Collections.sort(strList);
 		
 		strList.forEach(o->System.out.println(o));
 		
-		System.out.println("----------------------by name----------------");
+		/*System.out.println("----------------------by name----------------");
 		
 		Collections.sort(strList, new PersonSortByName());
 		
 		strList.forEach(o->System.out.println(o));
-
+*/
 	}
 
 }

@@ -63,7 +63,7 @@ public class ProducerConsumerExample2 {
 
 		public int poll() throws InterruptedException {
 			synchronized (this) {
-				while (list.size() == 0) {
+				while (list.isEmpty()) {
 					wait();
 				}
 				int value = list.poll();

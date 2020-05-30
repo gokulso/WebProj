@@ -5,13 +5,19 @@ public class ThreadB extends Thread {
 	int total;
 
 	@Override
-	public synchronized void run() {
+	public void run() {
+		synchronized (this) {
 
-		for (int i = 0; i < 100; i++) {
-			total += i;
+			for (int i = 0; i < 100; i++) {
+				total += i;
+			}
+			
+			
+
+			System.out.println("In Run :- " + Thread.currentThread().getName());
+
+		   notify();
 		}
-
-		System.out.println("In Run :- " + Thread.currentThread().getName());
 	}
 
 }

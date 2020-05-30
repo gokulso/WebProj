@@ -9,7 +9,7 @@ public class ExecuterServiceTest {
 
 	public static void main(String[] args) {
 		
-	/*	
+		
 		Runnable r = new MyRunnableTask();
 		Executor ex = new NewThreadExecutor();
 		ex.execute(r);
@@ -26,7 +26,7 @@ public class ExecuterServiceTest {
 		Runnable r2 = new MyRunnableTask();
 		ExecutorService ex2 = Executors.newCachedThreadPool(); // subtype of Executor
 		ex2.execute(r2);
-		*/
+		
 		//Fixed Thread Pools—Most Common
 		
 		//ExecutorService exfix = Executors.newCachedThreadPool();
